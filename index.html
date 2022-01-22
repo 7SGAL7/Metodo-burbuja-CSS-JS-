@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Burbuja</title>
+
+</head>
+
+<body>
+    <div class="tam-error">
+        <div class="mensaje">
+            <h2>TAMAÑO NO PERMITIDO</h2>
+        </div>
+    </div>
+    <div class="error" id="error">
+        <div class="error-contenido">
+            <h2>Rango de valores no validos</h2>
+            <p>
+                por favor ingrese un valor en el rango: -9999 y 9999
+            </p>
+            <input type="button" value="X" name="Cerrar" onclick="cerrar()">
+        </div>
+    </div>
+    <form name="numeros" id="form">
+        <label>INGRESAR LOS VALORES: <input id ="numero" type="text" name="valores" ></label>
+        <input type="button" value="Ingresar" name="obtener" onclick="recibirdatos">
+        <input type="button" value="Acomodar" name="Acomodo" id="botonAcomodar" onclick="Acomodar">
+    </form>
+    <nav>
+        <h1>
+            ORDENAMIENTO BURBUJA
+        </h1>
+    </nav>
+    <div class="cajas" id="cajas">
+
+    </div>
+
+    <script type="text/javascript" src="Script.js"></script>
+</body>
+
+</html>
